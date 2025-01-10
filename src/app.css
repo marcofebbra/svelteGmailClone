@@ -1,0 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(244,244,244);
+    color: "#202124";
+    overflow: hidden;
+}
