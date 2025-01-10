@@ -124,6 +124,9 @@
                 {:else if leftSidebar.selected.name == "Bozze"}
                     <p class="text-[16px]">{`Non ci sono bozze salvate`}</p>
                     <p>{"La bozze verranno visualizzate qui."}</p>
+                {:else if leftSidebar.selected.name == "Inviati"}
+                    <p class="text-[16px]">{`Non ci sono email inviate`}</p>
+                    <p>{"La email inviate verranno visualizzate qui."}</p>
                 {:else if leftSidebar.selected.name == "Speciali"}
                     <p class="text-[16px]">{`Nessun messaggio speciale. La funzione Speciali ti permette di assegnare uno stato speciale a un messaggio per renderlo più facile da trovare. Fai clic sulla stella accanto a ciascuna conversazione o messaggio per contrassegnarlo come speciale.`}</p>
                 {:else}
