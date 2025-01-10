@@ -26,14 +26,6 @@ export const createEmail = () => {
         return email.id;
 }
 
-export const getEmailByID = (id: string) => {
-    const email = get(emailStore).filter((email) => email.id == id);
-    if(email && email.length == 1)
-        return email[0];
-    else 
-        return undefined;
-}
-
 
 export const updateEmails = (ids: string[], updates: Partial<Email>, event?: Event) => {
     if(event)

@@ -8,10 +8,9 @@
 	import { it } from 'date-fns/locale';
 	import { CornerUpRight,CornerUpLeft,User, Smile } from 'lucide-svelte';
 	import Allegati from '../../components/Allegati.svelte';
-	import { getEmailByID } from '$lib/email';
 
 	let { data }: {data: PageData} = $props();
-    let email: Email | undefined = $state(getEmailByID(data.id));
+    let email: Email = $state(data);
 
     $effect(() => {
         if($emailStore.length>0 && data.id){
@@ -40,10 +39,10 @@
             </div>
         </div>
         <div class="w-full flex flex-col">
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-start md:flex-row md:items-center flex-col">
                 <div class="flex gap-1 items-center">
-                    <p class="text-[14px] font-semibold">{email.mittente.name}</p>
-                    <p class="text-[12px] text-[#5e5e5e]">{`<${email.mittente.email}>`}</p>
+                    <p class="text-[14px] font-semibold truncate">{email.mittente.name}</p>
+                    <p class="text-[12px] text-[#5e5e5e] truncate">{`<${email.mittente.email}>`}</p>
                 </div>
                 <div class="flex gap-1">
                     <p class="text-[12px] text-[#5e5e5e]">{format(String(email.data),"dd MMM yyyy, hh:mm", {locale: it})}</p>
