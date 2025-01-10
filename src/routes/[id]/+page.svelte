@@ -45,7 +45,7 @@
                     <p class="text-[12px] text-[#5e5e5e] truncate">{`<${email.mittente.email}>`}</p>
                 </div>
                 <div class="flex gap-1">
-                    <p class="text-[12px] text-[#5e5e5e]">{format(String(email.data),"dd MMM yyyy, hh:mm", {locale: it})}</p>
+                    <p class="text-[12px] text-[#5e5e5e]">{format(String(email.data),"dd MMM yyyy, HH:mm", {locale: it})}</p>
                 </div>
             </div>
         </div>
