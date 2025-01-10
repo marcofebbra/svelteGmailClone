@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { rightSidebar } from "$lib/sidebar.svelte";
+    import { rightSidebar } from "$lib/LeftSidebar.svelte";
     import { ChevronLeft } from 'lucide-svelte';
 
     let isHover = $state(false)

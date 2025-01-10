@@ -2,7 +2,7 @@
 	import { goto } from "$app/navigation";
 	import { sezioni } from "$lib/data/sezioni";
 	import { sorting } from "$lib/EmailSection.svelte";
-    import { leftSidebar } from "$lib/sidebar.svelte";
+    import { leftSidebar } from "$lib/LeftSidebar.svelte";
     import { type Icon as IconType } from "lucide-svelte";
 
     interface Props {

@@ -1,6 +1,6 @@
 <script>
     import { Pencil } from 'lucide-svelte';
-    import { leftSidebar } from '$lib/sidebar.svelte';
+    import { leftSidebar } from '$lib/LeftSidebar.svelte';
     import { newEmailForm } from '$lib/NewEmailForm.svelte';
 	import { createEmail } from '$lib/email';
 

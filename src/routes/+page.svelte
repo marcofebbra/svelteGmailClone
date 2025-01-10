@@ -4,7 +4,7 @@
 	import { sortEmails, updateEmails } from "$lib/email";
 	import { getTab, page, sorting, tabSelected } from "$lib/EmailSection.svelte";
 	import { emailStore } from "../store/emailStore";
-	import { leftSidebar } from "$lib/sidebar.svelte";
+	import { leftSidebar } from "$lib/LeftSidebar.svelte";
 	import { search } from "$lib/SearchBar.svelte";
 	import ControlBar from "../components/ControlBar.svelte";
 	import Tabs from "../components/Tabs.svelte";

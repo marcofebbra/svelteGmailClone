@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { rightSidebar } from "$lib/sidebar.svelte";
+    import { rightSidebar } from "$lib/LeftSidebar.svelte";
     import { Plus } from 'lucide-svelte';
 
 	import IconButton from "./IconButton.svelte";

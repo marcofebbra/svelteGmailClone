@@ -2,7 +2,7 @@
 	import IconButton from "./IconButton.svelte";
 	import SearchBar from "./SearchBar.svelte";
     import {AlignJustify, Grip, UserRound, Settings, CircleHelp, Search} from "lucide-svelte"
-    import { leftSidebar } from "$lib/sidebar.svelte";
+    import { leftSidebar } from "$lib/LeftSidebar.svelte";
 
     const handleSidebar = () => {
         leftSidebar.toggle();

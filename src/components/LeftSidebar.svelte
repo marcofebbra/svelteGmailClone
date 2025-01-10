@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { leftSidebar } from "$lib/sidebar.svelte";
+    import { leftSidebar } from "$lib/LeftSidebar.svelte";
 	import NewMailButton from "./NewMailButton.svelte";
 	import LeftSidebarButton from "./LeftSidebarButton.svelte";
     import { emailStore } from "../store/emailStore";

@@ -2,7 +2,7 @@
 	import {ArrowUpDown, Check, Minus, RotateCw , EllipsisVertical, ChevronRight, ChevronLeft, MailOpen, Mail, Trash2, Undo2 } from "lucide-svelte";
 	import IconButton from "./IconButton.svelte";
 	import type { Email } from "$lib/types";
-	import { leftSidebar } from "$lib/sidebar.svelte";
+	import { leftSidebar } from "$lib/LeftSidebar.svelte";
 	import { page } from "$lib/EmailSection.svelte";
 
     interface Props {
